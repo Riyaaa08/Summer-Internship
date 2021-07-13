@@ -1,0 +1,26 @@
+<html>
+<h1>Record of Student :</h1><br>
+<p>Maths : <input type="text" id="S1"></p>
+<p>BEEE : <input type="text" id="S2"></p>
+<p>Chemistry : <input type="text" id="S3"></p>
+<p>ED : <input type="text" id="S4"></p>
+<p>English : <input type="text" id="S5"></p>
+<p><input type="button" value="Add" onclick="add()"/></p>
+<input type="button" value="Percentage" onclick="ptg()"/><br>
+<output id="out1">
+<script>
+function add(){
+a=parseInt(S1.value);
+b=parseInt(S2.value);
+c=parseInt(S3.value);
+d=parseInt(S4.value);
+e=parseInt(S5.value);
+f=a+b+c+d+e;
+out1.value="Sum of Marks is "+f
+}
+function ptg(){
+g=(f/500)*100;
+out1.value="Percentage gained is "+g +'%'
+}
+</script>
+</html>
